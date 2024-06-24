@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post" class="w-75 buttons mx-auto fs-4 fw-bolder" style=" zoom: 200%">
+    <h1 class="mx-1 my-4">Enter The Chat Room<small class="text-body-secondary"> or make one!</small></h1>
+    <div class="mb-3 container-fluid mx-2 fw-semibold">
+        <label for="exampleInputtext1" class="form-label">Name</label>
+        <input type="text" placeholder="Enter your name!" class="form-control" id="exampleInputtext1"
+            aria-describedby="emailHelp" name="name" value="{{name}}">
+    </div>
+    <div class="mb-3 mx-2 container-fluid fw-semibold join">
+        <label for="exampleInputPassword1" class="form-label">Room Code</label>
+        <input type="text" name="code" placeholder="Room code" value="{{code}}" class="form-control"
+            id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check mx-2 container-fluid fw-semibold">
+        <input type="checkbox" required class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label fs-6 mx-auto" for="exampleCheck1">I agree that this is the best Chatting app</label>
+    </div>
+    <button type="submit" name="join" class="btn btn-primary mx-2 fw-semibold btn-lg">Join Room</button>
+    <button type="submit" name="create" class="btn btn-outline-danger mx-2 fw-semibold btn-lg">Create a Room</button>
+
+    <div class="{% if error %} visible {% else %} invisible {% endif %}alert alert-warning alert-dismissible fade show fs-5 my-2 fw-light" role="alert">
+        <strong class="fw_bold">{% if error %}{{error}}{% endif %}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    
+    
+    
+</form>
+{% endblock %}
