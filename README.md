@@ -1,5 +1,5 @@
 # Ez-Chat 💬
-#### Video Demo: [Video URL](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+#### Video Demo: https://youtu.be/EYpkZi3A0DY
 #### Description:
 This is my CS50x Final Project - Ez-Chat, it is interactive and responsive web chatting app. I used packages Flask and Socket.IO to create the responsive chat platform. Users can join existing chat rooms or create new ones and the messages get update in real time. This README file provides a comprehensive overview of the project, including its structure, features, design and instructions for running the application.
 
