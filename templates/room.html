@@ -32,11 +32,11 @@ input.addEventListener("keypress", function(event) {
   
     const createMessage = (name, msg) => {
       const content = `
-      <div class="text" style="font-size:2em">
-          <span>
-              <strong>${name}</strong>: ${msg}
+      <div class="text custom-font" >
+          <span class="custom-font">
+              <strong class="text-nowrap bd-highlight fw-bolder">${name}</strong>: ${msg}
           </span>
-          <span class="muted">
+          <span class="muted ">
               ${new Date().toLocaleString()}
           </span>
       </div>
